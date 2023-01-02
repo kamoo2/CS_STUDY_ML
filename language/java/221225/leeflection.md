@@ -7,8 +7,8 @@
 - 자바는 OS에 독립적이다.
   - 그 이유는 JVM이 OS와 프로그램의 사이에서 기계어로 해석해주는 역할을 하기 때문.
   - 어떠한 OS든 JAVA가 설치 되어 있다면 JVM에 의해서 .java코드가 기계어로 해석될 수 있다.
-  ![출처 : [https://d2.naver.com/helloworld/1230](https://d2.naver.com/helloworld/1230)](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A2%E1%84%92%E1%85%A7%E1%86%A8%20ecffc8866aa24977b5dd11ded5d59b73/img/Untitled.png)
-  출처 : [https://d2.naver.com/helloworld/1230](https://d2.naver.com/helloworld/1230)
+    ![출처 : [https://d2.naver.com/helloworld/1230](https://d2.naver.com/helloworld/1230)](./img/lee5.png)
+    출처 : [https://d2.naver.com/helloworld/1230](https://d2.naver.com/helloworld/1230)
 
 1. 개발자가 IDE를 통해 .java파일을 생성한다.
 2. Build를 하게되면 Java Compiler(javac)를 통해 .class파일을 생성하게된다.
@@ -21,11 +21,7 @@
 
 - JVM은 OS위에서 실행되면서 메모리 영역을 할당 받게되는데 이를 런타임 데이터 영역이라고 한다. 크게 5가지로 세분화 할 수 있다.
 
-![출처 : [https://aljjabaegi.tistory.com/387](https://aljjabaegi.tistory.com/387)](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A2%E1%84%92%E1%85%A7%E1%86%A8%20ecffc8866aa24977b5dd11ded5d59b73/img/Untitled%201.png)
-
-출처 : [https://aljjabaegi.tistory.com/387](https://aljjabaegi.tistory.com/387)
-
-![출처 : [https://aljjabaegi.tistory.com/387](https://aljjabaegi.tistory.com/387)](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A2%E1%84%92%E1%85%A7%E1%86%A8%20ecffc8866aa24977b5dd11ded5d59b73/img/Untitled%201.png)
+![출처 : [https://aljjabaegi.tistory.com/387](https://aljjabaegi.tistory.com/387)](./img/lee1.png)
 
 출처 : [https://aljjabaegi.tistory.com/387](https://aljjabaegi.tistory.com/387)
 
@@ -48,10 +44,10 @@
 - 실행 엔진은 클래스 로더를 통해 런타임 데이터 영역에 배친된 바이트 코드를 명령어 단위로 읽어서 실행한다.
 - 바이트 코드의 각 명령어는 1바이트 크기의 OpCode와 추가 피연산자로 이루어져 있다.
 - 이 수행 과정에서 실행 엔진은 바이트 크드를 기계가 실행할 수 있는 형태로 변경하는데 다음 두 가지 방식으로 변경한다.
-  - 인터프리터 : 바이트 코드 명령어를 하나씩 읽어서 해석하고 실행한다. 하나하나 해석은 빠르지만 전체적인 실행 속도는 느리다는 단점이 있다. JVM안에서 바이트코드는 기본적으로 인터프리터 방식으로 동작한다.
+  - 인터프리터 : 바`이트 코드 명령어를 하나씩 읽어서 해석하고 실행한다. 하나하나 해석은 빠르지만 전체적인 실행 속도는 느리다는 단점이 있다. JVM안에서 바이트코드는 기본적으로 인터프리터 방식으로 동작한다.
   - JIT 컴파일러 : 인터프리터의 단점을 보완하기 위해 도입된 방식으로 바이트 코드 전체를 컴파일하여 네이티브 코드로 변경하고 이후에는 해당 메서드를 더 이상 인터프리팅 하지 않고 네이티브 코드로 직접 실행하는 방식이다. 하나씩 인터프리팅하여 실행하는 것이 아니라 바이트 코드 전체가 컴파일된 네이티브 코드를 실행하는 것이기 때문에 전체적인 실행 속도는 인터프리팅 방식보다 빠르다.
 
-![출처 : [https://steady-snail.tistory.com/67](https://steady-snail.tistory.com/67)](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A2%E1%84%92%E1%85%A7%E1%86%A8%20ecffc8866aa24977b5dd11ded5d59b73/img/Untitled%202.png)
+![출처 : [https://steady-snail.tistory.com/67](https://steady-snail.tistory.com/67)](./img/lee2.png)
 
 출처 : [https://steady-snail.tistory.com/67](https://steady-snail.tistory.com/67)
 
@@ -101,7 +97,7 @@ Java Data Type
 - 비객체 타입이다. 따라서 null값을 가질 수 없다. 만약 Primitive type에 Null을 넣고 싶다면 Wrapper Class를 활용할 수 있다.
 - Stack 메모리에 저장된다.
 
-![[https://gyoogle.dev/blog/computer-language/Java/Primitive type & Reference type.html](https://gyoogle.dev/blog/computer-language/Java/Primitive%20type%20&%20Reference%20type.html)](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A2%E1%84%92%E1%85%A7%E1%86%A8%20ecffc8866aa24977b5dd11ded5d59b73/img/Untitled%203.png)
+![[https://gyoogle.dev/blog/computer-language/Java/Primitive type & Reference type.html](https://gyoogle.dev/blog/computer-language/Java/Primitive%20type%20&%20Reference%20type.html)](./img/lee3.png)
 
 [https://gyoogle.dev/blog/computer-language/Java/Primitive type & Reference type.html](https://gyoogle.dev/blog/computer-language/Java/Primitive%20type%20&%20Reference%20type.html)
 
@@ -159,7 +155,7 @@ Java Data Type
 
 ### Boxing 과 Unboxing
 
-![[https://coding-factory.tistory.com/547](https://coding-factory.tistory.com/547)](%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A2%E1%84%92%E1%85%A7%E1%86%A8%20ecffc8866aa24977b5dd11ded5d59b73/img/Untitled%204.png)
+![[https://coding-factory.tistory.com/547](https://coding-factory.tistory.com/547)](./img/lee4.png)
 
 [https://coding-factory.tistory.com/547](https://coding-factory.tistory.com/547)
 
